@@ -37,5 +37,5 @@ public class AdminAdReCate {
 	    	 public void clickSubmLogin (){
 	    	 login.click();
 		 	}
-	    	
+}
 
