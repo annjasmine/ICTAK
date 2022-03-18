@@ -34,7 +34,8 @@ public class LandingPage {
 		    private WebElement message;
 		    @FindBy(id="submit")
 		    private WebElement submitmessage;
-		    
+		    @FindBy(xpath="//*[@id=\"contact\"]/div/div/ul[2]/li[1]")
+		    private WebElement github;
 		    //About us
 		    @FindBy (xpath="//*[text()='About us']")
 		    private WebElement aboutus;
@@ -96,18 +97,19 @@ public class LandingPage {
 			 public void clickSubmit1(){
 			            submitmessage.click();
 		     }
+			 public boolean clickGithub(){
+		            return github.isEnabled();
+			 }
 			//Navigate About us page
 		     public void clickAboutUs(){
 			            aboutus.click();
 		    }      
-		     public void clickHandle(){
-		            fb.click();
-		            insta.click();
-		            linkin.click();
-		            twit.click();
+		     public boolean clickHandle(){
+		            return fb.isEnabled();
+		            //return linkin.isEnabled();
+		            //return twit.isEnabled();
+		            //return insta.isEnabled();
 		     }
-		     //public void clickTerms(){  
-		           //terms.click();
 		     public boolean clickTerms() {
 		    	 return terms.isEnabled();
 		    }

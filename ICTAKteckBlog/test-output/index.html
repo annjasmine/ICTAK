@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>D:\ICTAKnew\ICTAK\ICTAKteckBlog\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">22 methods,   22 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.techblog.scripts.TestClass" class="method navigator-link" hash-for-method="varifyingAboutUs">varifyingAboutUs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.techblog.scripts.TestClass" class="method navigator-link" hash-for-method="varifyingCategories">varifyingCategories</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.techblog.scripts.TestClass" class="method navigator-link" hash-for-method="varifyingContactUs">varifyingContactUs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.techblog.scripts.TestClass" class="method navigator-link" hash-for-method="varifyingFeedback">varifyingFeedback</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.techblog.scripts.TestClass" class="method navigator-link" hash-for-method="varifyingGitLink">varifyingGitLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.techblog.scripts.TestClass" class="method navigator-link" hash-for-method="varifyingLatestArticles">varifyingLatestArticles</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.techblog.scripts.TestClass" class="method navigator-link" hash-for-method="varifyingSocialMedia">varifyingSocialMedia</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.techblog.scripts.UserSignup" class="method navigator-link" hash-for-method="verifyInValidPassword2">verifyInValidPassword2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.techblog.scripts.TCLogin" class="method navigator-link" hash-for-method="verifyInvalidEmailLogin">verifyInvalidEmailLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.techblog.scripts.TCLogin" class="method navigator-link" hash-for-method="verifyInvalidPasswLogin">verifyInvalidPasswLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.techblog.scripts.UserSignup" class="method navigator-link" hash-for-method="verifyInvalidPassword">verifyInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.techblog.scripts.TrainerSignUp" class="method navigator-link" hash-for-method="verifyInvalidPasswordTrainerSignup">verifyInvalidPasswordTrainerSignup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.techblog.scripts.TrainerSignUp" class="method navigator-link" hash-for-method="verifyInvalidTrainerEmail">verifyInvalidTrainerEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.techblog.scripts.UserSignup" class="method navigator-link" hash-for-method="verifyInvalidUserEmail">verifyInvalidUserEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.techblog.scripts.UserSignup" class="method navigator-link" hash-for-method="verifyInvalidUserName">verifyInvalidUserName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.techblog.scripts.TestClass" class="method navigator-link" hash-for-method="verifyLandingPage">verifyLandingPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.techblog.scripts.TCLogin" class="method navigator-link" hash-for-method="verifyNullLogin">verifyNullLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.techblog.scripts.UserSignup" class="method navigator-link" hash-for-method="verifyNullUserSignup">verifyNullUserSignup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.techblog.scripts.TCLogin" class="method navigator-link" hash-for-method="verifySignUpLink">verifySignUpLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.techblog.scripts.TrainerSignUp" class="method navigator-link" hash-for-method="verifySignin">verifySignin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.techblog.scripts.TrainerSignUp" class="method navigator-link" hash-for-method="verifyValidTrainerSignup">verifyValidTrainerSignup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.techblog.scripts.UserSignup" class="method navigator-link" hash-for-method="verifyValidUserSignup">verifyValidUserSignup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.techblog.scripts.UserSignup</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInValidPassword2">
+                  </a> <!-- verifyInValidPassword2 -->
+                  <span class="method-name">verifyInValidPassword2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidPassword">
+                  </a> <!-- verifyInvalidPassword -->
+                  <span class="method-name">verifyInvalidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidUserEmail">
+                  </a> <!-- verifyInvalidUserEmail -->
+                  <span class="method-name">verifyInvalidUserEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidUserName">
+                  </a> <!-- verifyInvalidUserName -->
+                  <span class="method-name">verifyInvalidUserName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullUserSignup">
+                  </a> <!-- verifyNullUserSignup -->
+                  <span class="method-name">verifyNullUserSignup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyValidUserSignup">
+                  </a> <!-- verifyValidUserSignup -->
+                  <span class="method-name">verifyValidUserSignup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.techblog.scripts.TestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="varifyingAboutUs">
+                  </a> <!-- varifyingAboutUs -->
+                  <span class="method-name">varifyingAboutUs</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="varifyingCategories">
+                  </a> <!-- varifyingCategories -->
+                  <span class="method-name">varifyingCategories</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="varifyingContactUs">
+                  </a> <!-- varifyingContactUs -->
+                  <span class="method-name">varifyingContactUs</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="varifyingFeedback">
+                  </a> <!-- varifyingFeedback -->
+                  <span class="method-name">varifyingFeedback</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="varifyingGitLink">
+                  </a> <!-- varifyingGitLink -->
+                  <span class="method-name">varifyingGitLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="varifyingLatestArticles">
+                  </a> <!-- varifyingLatestArticles -->
+                  <span class="method-name">varifyingLatestArticles</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="varifyingSocialMedia">
+                  </a> <!-- varifyingSocialMedia -->
+                  <span class="method-name">varifyingSocialMedia</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLandingPage">
+                  </a> <!-- verifyLandingPage -->
+                  <span class="method-name">verifyLandingPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.techblog.scripts.TrainerSignUp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidPasswordTrainerSignup">
+                  </a> <!-- verifyInvalidPasswordTrainerSignup -->
+                  <span class="method-name">verifyInvalidPasswordTrainerSignup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidTrainerEmail">
+                  </a> <!-- verifyInvalidTrainerEmail -->
+                  <span class="method-name">verifyInvalidTrainerEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySignin">
+                  </a> <!-- verifySignin -->
+                  <span class="method-name">verifySignin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyValidTrainerSignup">
+                  </a> <!-- verifyValidTrainerSignup -->
+                  <span class="method-name">verifyValidTrainerSignup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.techblog.scripts.TCLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidEmailLogin">
+                  </a> <!-- verifyInvalidEmailLogin -->
+                  <span class="method-name">verifyInvalidEmailLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidPasswLogin">
+                  </a> <!-- verifyInvalidPasswLogin -->
+                  <span class="method-name">verifyInvalidPasswLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullLogin">
+                  </a> <!-- verifyNullLogin -->
+                  <span class="method-name">verifyNullLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySignUpLink">
+                  </a> <!-- verifySignUpLink -->
+                  <span class="method-name">verifySignUpLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\ICTAKnew\ICTAK\ICTAKteckBlog\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.techblog.scripts.TestBase&quot;/&gt;
+      &lt;class name=&quot;com.techblog.scripts.TestClass&quot;/&gt;
+      &lt;class name=&quot;com.techblog.scripts.UserSignup&quot;/&gt;
+      &lt;class name=&quot;com.techblog.scripts.TrainerSignUp&quot;/&gt;
+      &lt;class name=&quot;com.techblog.scripts.TCLogin&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(22);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'varifyingFeedback')
+data.setCell(0, 2, 'com.techblog.scripts.TestClass')
+data.setCell(0, 3, 11114);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'varifyingLatestArticles')
+data.setCell(1, 2, 'com.techblog.scripts.TestClass')
+data.setCell(1, 3, 10578);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyInvalidEmailLogin')
+data.setCell(2, 2, 'com.techblog.scripts.TCLogin')
+data.setCell(2, 3, 8258);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'varifyingContactUs')
+data.setCell(3, 2, 'com.techblog.scripts.TestClass')
+data.setCell(3, 3, 7652);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyInvalidUserName')
+data.setCell(4, 2, 'com.techblog.scripts.UserSignup')
+data.setCell(4, 3, 7343);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyValidUserSignup')
+data.setCell(5, 2, 'com.techblog.scripts.UserSignup')
+data.setCell(5, 3, 7237);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyValidTrainerSignup')
+data.setCell(6, 2, 'com.techblog.scripts.TrainerSignUp')
+data.setCell(6, 3, 6479);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyInvalidPasswLogin')
+data.setCell(7, 2, 'com.techblog.scripts.TCLogin')
+data.setCell(7, 3, 6058);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyInvalidPassword')
+data.setCell(8, 2, 'com.techblog.scripts.UserSignup')
+data.setCell(8, 3, 5915);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyInvalidUserEmail')
+data.setCell(9, 2, 'com.techblog.scripts.UserSignup')
+data.setCell(9, 3, 5900);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'varifyingCategories')
+data.setCell(10, 2, 'com.techblog.scripts.TestClass')
+data.setCell(10, 3, 5896);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'varifyingAboutUs')
+data.setCell(11, 2, 'com.techblog.scripts.TestClass')
+data.setCell(11, 3, 5396);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyInValidPassword2')
+data.setCell(12, 2, 'com.techblog.scripts.UserSignup')
+data.setCell(12, 3, 5182);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'varifyingGitLink')
+data.setCell(13, 2, 'com.techblog.scripts.TestClass')
+data.setCell(13, 3, 4923);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'varifyingSocialMedia')
+data.setCell(14, 2, 'com.techblog.scripts.TestClass')
+data.setCell(14, 3, 4799);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyInvalidPasswordTrainerSignup')
+data.setCell(15, 2, 'com.techblog.scripts.TrainerSignUp')
+data.setCell(15, 3, 4424);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyNullUserSignup')
+data.setCell(16, 2, 'com.techblog.scripts.UserSignup')
+data.setCell(16, 3, 2695);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyNullLogin')
+data.setCell(17, 2, 'com.techblog.scripts.TCLogin')
+data.setCell(17, 3, 2462);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifySignin')
+data.setCell(18, 2, 'com.techblog.scripts.TrainerSignUp')
+data.setCell(18, 3, 2363);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyLandingPage')
+data.setCell(19, 2, 'com.techblog.scripts.TestClass')
+data.setCell(19, 3, 2223);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifySignUpLink')
+data.setCell(20, 2, 'com.techblog.scripts.TCLogin')
+data.setCell(20, 3, 1540);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyInvalidTrainerEmail')
+data.setCell(21, 2, 'com.techblog.scripts.TrainerSignUp')
+data.setCell(21, 3, 1500);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">8 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.techblog.scripts.UserSignup</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">onSetup</span>
+                <br/>
+                <span class="ignored-method-name">quitBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.techblog.scripts.TestClass</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">onSetup</span>
+                <br/>
+                <span class="ignored-method-name">quitBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.techblog.scripts.TrainerSignUp</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">onSetup</span>
+                <br/>
+                <span class="ignored-method-name">quitBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.techblog.scripts.TCLogin</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">onSetup</span>
+                <br/>
+                <span class="ignored-method-name">quitBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.techblog.scripts.TestBase</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">onSetup(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.techblog.scripts.TestClass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyLandingPage</span>
+                <span class="method-start">15060 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyLandingPage status=SUCCESS method=TestClass.verifyLandingPage()[pri:1, instan...)</span>
+                <span class="method-start">17291 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">varifyingFeedback</span>
+                <span class="method-start">17302 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=varifyingFeedback status=SUCCESS method=TestClass.varifyingFeedback()[pri:2, instan...)</span>
+                <span class="method-start">28421 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">varifyingContactUs</span>
+                <span class="method-start">28426 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=varifyingContactUs status=SUCCESS method=TestClass.varifyingContactUs()[pri:3, inst...)</span>
+                <span class="method-start">36080 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">varifyingGitLink</span>
+                <span class="method-start">36092 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=varifyingGitLink status=SUCCESS method=TestClass.varifyingGitLink()[pri:4, instance...)</span>
+                <span class="method-start">41066 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">varifyingLatestArticles</span>
+                <span class="method-start">41076 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=varifyingLatestArticles status=SUCCESS method=TestClass.varifyingLatestArticles()[p...)</span>
+                <span class="method-start">51656 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">varifyingAboutUs</span>
+                <span class="method-start">51657 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=varifyingAboutUs status=SUCCESS method=TestClass.varifyingAboutUs()[pri:6, instance...)</span>
+                <span class="method-start">57056 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">varifyingSocialMedia</span>
+                <span class="method-start">57058 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=varifyingSocialMedia status=SUCCESS method=TestClass.varifyingSocialMedia()[pri:7, ...)</span>
+                <span class="method-start">61861 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">varifyingCategories</span>
+                <span class="method-start">61863 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=varifyingCategories status=SUCCESS method=TestClass.varifyingCategories()[pri:8, in...)</span>
+                <span class="method-start">67769 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.techblog.scripts.UserSignup</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyNullUserSignup</span>
+                <span class="method-start">67774 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyNullUserSignup status=SUCCESS method=UserSignup.verifyNullUserSignup()[pri:1,...)</span>
+                <span class="method-start">70471 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyInvalidUserName</span>
+                <span class="method-start">70473 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyInvalidUserName status=SUCCESS method=UserSignup.verifyInvalidUserName()[pri:...)</span>
+                <span class="method-start">77818 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyInvalidUserEmail</span>
+                <span class="method-start">77821 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyInvalidUserEmail status=SUCCESS method=UserSignup.verifyInvalidUserEmail()[pr...)</span>
+                <span class="method-start">83725 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyInvalidPassword</span>
+                <span class="method-start">83727 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyInvalidPassword status=SUCCESS method=UserSignup.verifyInvalidPassword()[pri:...)</span>
+                <span class="method-start">89645 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyInValidPassword2</span>
+                <span class="method-start">89649 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyInValidPassword2 status=SUCCESS method=UserSignup.verifyInValidPassword2()[pr...)</span>
+                <span class="method-start">94835 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyValidUserSignup</span>
+                <span class="method-start">94839 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyValidUserSignup status=SUCCESS method=UserSignup.verifyValidUserSignup()[pri:...)</span>
+                <span class="method-start">102078 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.techblog.scripts.TrainerSignUp</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyInvalidTrainerEmail</span>
+                <span class="method-start">102079 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyInvalidTrainerEmail status=SUCCESS method=TrainerSignUp.verifyInvalidTrainerE...)</span>
+                <span class="method-start">103580 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyInvalidPasswordTrainerSignup</span>
+                <span class="method-start">103581 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyInvalidPasswordTrainerSignup status=SUCCESS method=TrainerSignUp.verifyInvali...)</span>
+                <span class="method-start">108006 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyValidTrainerSignup</span>
+                <span class="method-start">108011 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyValidTrainerSignup status=SUCCESS method=TrainerSignUp.verifyValidTrainerSign...)</span>
+                <span class="method-start">114492 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifySignin</span>
+                <span class="method-start">114493 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifySignin status=SUCCESS method=TrainerSignUp.verifySignin()[pri:4, instance:com...)</span>
+                <span class="method-start">116858 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.techblog.scripts.TCLogin</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyNullLogin</span>
+                <span class="method-start">116867 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyNullLogin status=SUCCESS method=TCLogin.verifyNullLogin()[pri:1, instance:com...)</span>
+                <span class="method-start">119330 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyInvalidPasswLogin</span>
+                <span class="method-start">119331 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyInvalidPasswLogin status=SUCCESS method=TCLogin.verifyInvalidPasswLogin()[pri...)</span>
+                <span class="method-start">125390 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyInvalidEmailLogin</span>
+                <span class="method-start">125392 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyInvalidEmailLogin status=SUCCESS method=TCLogin.verifyInvalidEmailLogin()[pri...)</span>
+                <span class="method-start">133651 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifySignUpLink</span>
+                <span class="method-start">133652 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifySignUpLink status=SUCCESS method=TCLogin.verifySignUpLink()[pri:4, instance:c...)</span>
+                <span class="method-start">135194 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.techblog.scripts.TestBase</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">135197 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

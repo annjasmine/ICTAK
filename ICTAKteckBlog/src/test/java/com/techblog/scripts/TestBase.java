@@ -17,14 +17,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
-public class TestBase {
-		public static WebDriver driver;
-	    public static Properties prop = null;
-	    String driverPath = "D:\\Jasmine\\ICTAK\\chromedriver\\chromedriver.exe";
+	public class TestBase {
+	public static WebDriver driver;
+	public static Properties prop = null;
+	String driverPath = "D:\\Jasmine\\ICTAK\\chromedriver\\chromedriver.exe";
 	public static void TestBase() {
+		
 	        try {
 	        	//Below line creates an object of Properties called 'prop'
 	            prop = new Properties();
@@ -39,34 +41,35 @@ public class TestBase {
 	        } catch (IOException e) {
 	            e.printStackTrace();
 	        }
-	}
-				@Parameters("browser") 
-				@BeforeTest
-				public void onSetup(String browserName) {
-	    	        TestBase(); 
-	    	        // for loading the configurations
-	    	       // String browserName = prop.getProperty("browser");
+	    	}
+			@Parameters("browser") 
+			@BeforeTest
+			public void onSetup(String browserName) {
+	    	     TestBase(); 
+	    	     // for loading the configurations
+	    	     // String browserName = prop.getProperty("browser");
 
-	    	        if (browserName.equals("chrome")) {
+	    	      if (browserName.equals("chrome")) {
 	    	        	System.setProperty("webdriver.chrome.driver", driverPath);
 	    	            driver = new ChromeDriver();
-	    	        }
-	    else if (browserName.equals("firefox")) {
+	    	       }
+	    	      else if (browserName.equals("firefox")) {
 	    	        	//geckodriver
-	    	        	System.setProperty("webdriver.gecko.driver", driverPath);
-	    	            driver = new FirefoxDriver();
+	    	    	  	System.setProperty("webdriver.gecko.driver", driverPath);
+	    	       		driver = new FirefoxDriver();
 	    	        }
+	    	      
 	    	        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    	        driver.get(prop.getProperty("url"));
 	    	        driver.manage().window().maximize();
 	    		    }
 	            @AfterMethod
-			    public void tearDown(ITestResult iTestResult) throws IOException {
+	            	public void tearDown(ITestResult iTestResult) throws IOException {
 			        if (iTestResult.FAILURE == iTestResult.getStatus()) {
 			            takeScreenshot(iTestResult.getName());
 			        }
-			    }
-		 public String takeScreenshot(String name) throws IOException {
+	            	}
+	            	public String takeScreenshot(String name) throws IOException {
 			    	
 			    	/*Step 1) Convert web driver object to TakesScreenshot
 			          Step 2) Call getScreenshotAs method to create image file
@@ -74,7 +77,7 @@ public class TestBase {
 			    	
 			       String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 			
-		 //Take the screenshot
+			       //Take the screenshot
 			        File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 			        
 			        String destination =  System.getProperty("user.dir") + "\\target\\" + name + dateName
@@ -86,9 +89,9 @@ public class TestBase {
 			        FileUtils.copyFile(source, finalDestination);
 			        return destination;   
 	            	 }
-		/* @AfterTest
-		    public void quitBrowser() throws IOException {
+	            @AfterTest
+	            public void quitBrowser() throws IOException {
 		        driver.quit();
-		 }
-		 */
-	        }
+	            }
+		
+	}

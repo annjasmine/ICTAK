@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="8" total="30" passed="22" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-18T21:01:12 IST" name="Suite" finished-at="2022-03-18T21:03:28 IST" duration-ms="135859">
+    <groups>
+    </groups>
+    <test started-at="2022-03-18T21:01:12 IST" name="Test" finished-at="2022-03-18T21:03:28 IST" duration-ms="135859">
+      <class name="com.techblog.scripts.TCLogin">
+        <test-method signature="verifyNullLogin()[pri:1, instance:com.techblog.scripts.TCLogin@63070bab]" started-at="2022-03-18T21:03:09 IST" name="verifyNullLogin" finished-at="2022-03-18T21:03:11 IST" duration-ms="2462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.techblog.scripts.TCLogin@63070bab]" started-at="2022-03-18T21:03:11 IST" name="tearDown" finished-at="2022-03-18T21:03:11 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNullLogin status=SUCCESS method=TCLogin.verifyNullLogin()[pri:1, instance:com.techblog.scripts.TCLogin@63070bab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyInvalidPasswLogin()[pri:2, instance:com.techblog.scripts.TCLogin@63070bab]" started-at="2022-03-18T21:03:11 IST" name="verifyInvalidPasswLogin" finished-at="2022-03-18T21:03:17 IST" duration-ms="6058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidPasswLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.techblog.scripts.TCLogin@63070bab]" started-at="2022-03-18T21:03:17 IST" name="tearDown" finished-at="2022-03-18T21:03:17 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInvalidPasswLogin status=SUCCESS method=TCLogin.verifyInvalidPasswLogin()[pri:2, instance:com.techblog.scripts.TCLogin@63070bab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyInvalidEmailLogin()[pri:3, instance:com.techblog.scripts.TCLogin@63070bab]" started-at="2022-03-18T21:03:17 IST" name="verifyInvalidEmailLogin" finished-at="2022-03-18T21:03:25 IST" duration-ms="8258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidEmailLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.techblog.scripts.TCLogin@63070bab]" started-at="2022-03-18T21:03:25 IST" name="tearDown" finished-at="2022-03-18T21:03:25 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInvalidEmailLogin status=SUCCESS method=TCLogin.verifyInvalidEmailLogin()[pri:3, instance:com.techblog.scripts.TCLogin@63070bab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifySignUpLink()[pri:4, instance:com.techblog.scripts.TCLogin@63070bab]" started-at="2022-03-18T21:03:25 IST" name="verifySignUpLink" finished-at="2022-03-18T21:03:27 IST" duration-ms="1540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUpLink -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.techblog.scripts.TCLogin@63070bab]" started-at="2022-03-18T21:03:27 IST" name="tearDown" finished-at="2022-03-18T21:03:27 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySignUpLink status=SUCCESS method=TCLogin.verifySignUpLink()[pri:4, instance:com.techblog.scripts.TCLogin@63070bab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.techblog.scripts.TCLogin -->
+      <class name="com.techblog.scripts.UserSignup">
+        <test-method signature="verifyNullUserSignup()[pri:1, instance:com.techblog.scripts.UserSignup@6f45df59]" started-at="2022-03-18T21:02:20 IST" name="verifyNullUserSignup" finished-at="2022-03-18T21:02:22 IST" duration-ms="2695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullUserSignup -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.techblog.scripts.UserSignup@6f45df59]" started-at="2022-03-18T21:02:22 IST" name="tearDown" finished-at="2022-03-18T21:02:22 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNullUserSignup status=SUCCESS method=UserSignup.verifyNullUserSignup()[pri:1, instance:com.techblog.scripts.UserSignup@6f45df59] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyInvalidUserName()[pri:2, instance:com.techblog.scripts.UserSignup@6f45df59]" started-at="2022-03-18T21:02:22 IST" name="verifyInvalidUserName" finished-at="2022-03-18T21:02:30 IST" duration-ms="7343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidUserName -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.techblog.scripts.UserSignup@6f45df59]" started-at="2022-03-18T21:02:30 IST" name="tearDown" finished-at="2022-03-18T21:02:30 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInvalidUserName status=SUCCESS method=UserSignup.verifyInvalidUserName()[pri:2, instance:com.techblog.scripts.UserSignup@6f45df59] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyInvalidUserEmail()[pri:3, instance:com.techblog.scripts.UserSignup@6f45df59]" started-at="2022-03-18T21:02:30 IST" name="verifyInvalidUserEmail" finished-at="2022-03-18T21:02:36 IST" duration-ms="5900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidUserEmail -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.techblog.scripts.UserSignup@6f45df59]" started-at="2022-03-18T21:02:36 IST" name="tearDown" finished-at="2022-03-18T21:02:36 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInvalidUserEmail status=SUCCESS method=UserSignup.verifyInvalidUserEmail()[pri:3, instance:com.techblog.scripts.UserSignup@6f45df59] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyInvalidPassword()[pri:4, instance:com.techblog.scripts.UserSignup@6f45df59]" started-at="2022-03-18T21:02:36 IST" name="verifyInvalidPassword" finished-at="2022-03-18T21:02:41 IST" duration-ms="5915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidPassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.techblog.scripts.UserSignup@6f45df59]" started-at="2022-03-18T21:02:41 IST" name="tearDown" finished-at="2022-03-18T21:02:41 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInvalidPassword status=SUCCESS method=UserSignup.verifyInvalidPassword()[pri:4, instance:com.techblog.scripts.UserSignup@6f45df59] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyInValidPassword2()[pri:5, instance:com.techblog.scripts.UserSignup@6f45df59]" started-at="2022-03-18T21:02:41 IST" name="verifyInValidPassword2" finished-at="2022-03-18T21:02:47 IST" duration-ms="5182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInValidPassword2 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.techblog.scripts.UserSignup@6f45df59]" started-at="2022-03-18T21:02:47 IST" name="tearDown" finished-at="2022-03-18T21:02:47 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInValidPassword2 status=SUCCESS method=UserSignup.verifyInValidPassword2()[pri:5, instance:com.techblog.scripts.UserSignup@6f45df59] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyValidUserSignup()[pri:6, instance:com.techblog.scripts.UserSignup@6f45df59]" started-at="2022-03-18T21:02:47 IST" name="verifyValidUserSignup" finished-at="2022-03-18T21:02:54 IST" duration-ms="7237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidUserSignup -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.techblog.scripts.UserSignup@6f45df59]" started-at="2022-03-18T21:02:54 IST" name="tearDown" finished-at="2022-03-18T21:02:54 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyValidUserSignup status=SUCCESS method=UserSignup.verifyValidUserSignup()[pri:6, instance:com.techblog.scripts.UserSignup@6f45df59] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.techblog.scripts.UserSignup -->
+      <class name="com.techblog.scripts.TrainerSignUp">
+        <test-method signature="verifyInvalidTrainerEmail()[pri:1, instance:com.techblog.scripts.TrainerSignUp@38e79ae3]" started-at="2022-03-18T21:02:54 IST" name="verifyInvalidTrainerEmail" finished-at="2022-03-18T21:02:55 IST" duration-ms="1500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidTrainerEmail -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.techblog.scripts.TrainerSignUp@38e79ae3]" started-at="2022-03-18T21:02:55 IST" name="tearDown" finished-at="2022-03-18T21:02:55 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInvalidTrainerEmail status=SUCCESS method=TrainerSignUp.verifyInvalidTrainerEmail()[pri:1, instance:com.techblog.scripts.TrainerSignUp@38e79ae3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyInvalidPasswordTrainerSignup()[pri:2, instance:com.techblog.scripts.TrainerSignUp@38e79ae3]" started-at="2022-03-18T21:02:55 IST" name="verifyInvalidPasswordTrainerSignup" finished-at="2022-03-18T21:03:00 IST" duration-ms="4424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidPasswordTrainerSignup -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.techblog.scripts.TrainerSignUp@38e79ae3]" started-at="2022-03-18T21:03:00 IST" name="tearDown" finished-at="2022-03-18T21:03:00 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInvalidPasswordTrainerSignup status=SUCCESS method=TrainerSignUp.verifyInvalidPasswordTrainerSignup()[pri:2, instance:com.techblog.scripts.TrainerSignUp@38e79ae3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyValidTrainerSignup()[pri:3, instance:com.techblog.scripts.TrainerSignUp@38e79ae3]" started-at="2022-03-18T21:03:00 IST" name="verifyValidTrainerSignup" finished-at="2022-03-18T21:03:06 IST" duration-ms="6479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidTrainerSignup -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.techblog.scripts.TrainerSignUp@38e79ae3]" started-at="2022-03-18T21:03:06 IST" name="tearDown" finished-at="2022-03-18T21:03:06 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyValidTrainerSignup status=SUCCESS method=TrainerSignUp.verifyValidTrainerSignup()[pri:3, instance:com.techblog.scripts.TrainerSignUp@38e79ae3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifySignin()[pri:4, instance:com.techblog.scripts.TrainerSignUp@38e79ae3]" started-at="2022-03-18T21:03:06 IST" name="verifySignin" finished-at="2022-03-18T21:03:09 IST" duration-ms="2363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.techblog.scripts.TrainerSignUp@38e79ae3]" started-at="2022-03-18T21:03:09 IST" name="tearDown" finished-at="2022-03-18T21:03:09 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySignin status=SUCCESS method=TrainerSignUp.verifySignin()[pri:4, instance:com.techblog.scripts.TrainerSignUp@38e79ae3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.techblog.scripts.TrainerSignUp -->
+      <class name="com.techblog.scripts.TestBase">
+        <test-method is-config="true" signature="onSetup(java.lang.String)[pri:0, instance:com.techblog.scripts.TestBase@7494f96a]" started-at="2022-03-18T21:01:12 IST" name="onSetup" finished-at="2022-03-18T21:01:27 IST" duration-ms="14965" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onSetup -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.techblog.scripts.TestBase@7494f96a]" started-at="2022-03-18T21:03:27 IST" name="quitBrowser" finished-at="2022-03-18T21:03:28 IST" duration-ms="647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.techblog.scripts.TestBase -->
+      <class name="com.techblog.scripts.TestClass">
+        <test-method signature="verifyLandingPage()[pri:1, instance:com.techblog.scripts.TestClass@58ea606c]" started-at="2022-03-18T21:01:27 IST" name="verifyLandingPage" finished-at="2022-03-18T21:01:29 IST" duration-ms="2223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLandingPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.techblog.scripts.TestClass@58ea606c]" started-at="2022-03-18T21:01:29 IST" name="tearDown" finished-at="2022-03-18T21:01:29 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLandingPage status=SUCCESS method=TestClass.verifyLandingPage()[pri:1, instance:com.techblog.scripts.TestClass@58ea606c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="varifyingFeedback()[pri:2, instance:com.techblog.scripts.TestClass@58ea606c]" started-at="2022-03-18T21:01:29 IST" name="varifyingFeedback" finished-at="2022-03-18T21:01:40 IST" duration-ms="11114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- varifyingFeedback -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.techblog.scripts.TestClass@58ea606c]" started-at="2022-03-18T21:01:40 IST" name="tearDown" finished-at="2022-03-18T21:01:40 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=varifyingFeedback status=SUCCESS method=TestClass.varifyingFeedback()[pri:2, instance:com.techblog.scripts.TestClass@58ea606c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="varifyingContactUs()[pri:3, instance:com.techblog.scripts.TestClass@58ea606c]" started-at="2022-03-18T21:01:40 IST" name="varifyingContactUs" finished-at="2022-03-18T21:01:48 IST" duration-ms="7652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- varifyingContactUs -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.techblog.scripts.TestClass@58ea606c]" started-at="2022-03-18T21:01:48 IST" name="tearDown" finished-at="2022-03-18T21:01:48 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=varifyingContactUs status=SUCCESS method=TestClass.varifyingContactUs()[pri:3, instance:com.techblog.scripts.TestClass@58ea606c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="varifyingGitLink()[pri:4, instance:com.techblog.scripts.TestClass@58ea606c]" started-at="2022-03-18T21:01:48 IST" name="varifyingGitLink" finished-at="2022-03-18T21:01:53 IST" duration-ms="4923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- varifyingGitLink -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.techblog.scripts.TestClass@58ea606c]" started-at="2022-03-18T21:01:53 IST" name="tearDown" finished-at="2022-03-18T21:01:53 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=varifyingGitLink status=SUCCESS method=TestClass.varifyingGitLink()[pri:4, instance:com.techblog.scripts.TestClass@58ea606c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="varifyingLatestArticles()[pri:5, instance:com.techblog.scripts.TestClass@58ea606c]" started-at="2022-03-18T21:01:53 IST" name="varifyingLatestArticles" finished-at="2022-03-18T21:02:03 IST" duration-ms="10578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- varifyingLatestArticles -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.techblog.scripts.TestClass@58ea606c]" started-at="2022-03-18T21:02:03 IST" name="tearDown" finished-at="2022-03-18T21:02:03 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=varifyingLatestArticles status=SUCCESS method=TestClass.varifyingLatestArticles()[pri:5, instance:com.techblog.scripts.TestClass@58ea606c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="varifyingAboutUs()[pri:6, instance:com.techblog.scripts.TestClass@58ea606c]" started-at="2022-03-18T21:02:03 IST" name="varifyingAboutUs" finished-at="2022-03-18T21:02:09 IST" duration-ms="5396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- varifyingAboutUs -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.techblog.scripts.TestClass@58ea606c]" started-at="2022-03-18T21:02:09 IST" name="tearDown" finished-at="2022-03-18T21:02:09 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=varifyingAboutUs status=SUCCESS method=TestClass.varifyingAboutUs()[pri:6, instance:com.techblog.scripts.TestClass@58ea606c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="varifyingSocialMedia()[pri:7, instance:com.techblog.scripts.TestClass@58ea606c]" started-at="2022-03-18T21:02:09 IST" name="varifyingSocialMedia" finished-at="2022-03-18T21:02:14 IST" duration-ms="4799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- varifyingSocialMedia -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.techblog.scripts.TestClass@58ea606c]" started-at="2022-03-18T21:02:14 IST" name="tearDown" finished-at="2022-03-18T21:02:14 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=varifyingSocialMedia status=SUCCESS method=TestClass.varifyingSocialMedia()[pri:7, instance:com.techblog.scripts.TestClass@58ea606c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="varifyingCategories()[pri:8, instance:com.techblog.scripts.TestClass@58ea606c]" started-at="2022-03-18T21:02:14 IST" name="varifyingCategories" finished-at="2022-03-18T21:02:20 IST" duration-ms="5896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- varifyingCategories -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.techblog.scripts.TestClass@58ea606c]" started-at="2022-03-18T21:02:20 IST" name="tearDown" finished-at="2022-03-18T21:02:20 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=varifyingCategories status=SUCCESS method=TestClass.varifyingCategories()[pri:8, instance:com.techblog.scripts.TestClass@58ea606c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.techblog.scripts.TestClass -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -9,6 +9,7 @@ public class Login {
 		 WebDriver driver;
 		    @FindBy(xpath="//img[@src=\"../../assets/images/user.png\"]")
 		    private WebElement dropdown;
+		    
 		    @FindBy(xpath="//a[@href=\"/login\"]")
 		    private WebElement loginopt; 
 		   
@@ -29,31 +30,30 @@ public class Login {
 		  
 		    @FindBy(xpath="//*[@id=\"log\"]/p/a")
 		    private WebElement signupredirect;
+		    
 		 public Login(WebDriver driver){
-		        this.driver = driver;
+		 this.driver = driver;
 		        //This initElements method will create all WebElements
 		        PageFactory.initElements(driver, this);
 		    }
-		 public void clickDropDown(){ 
+		 
+		 	public void clickDropDown(){ 
 		    	dropdown.click();
 		   	} 
 		    public void SelectLogin(){ 
 		    	loginopt.click();
 		    }
 		    public void setLoginName(String strLoginName) {
-		    loginname.sendKeys(strLoginName);  
+		    	loginname.sendKeys(strLoginName);  
 		    }
 		    public void strLoginPass(String strLoginPass){
-	    	 loginpass.sendKeys(strLoginPass);
+		    	loginpass.sendKeys(strLoginPass);
 		    }
-	    	 public void clickSubmLogin (){
-	    	 login.click();
+		    public void clickSubmLogin (){
+		    	login.click();
 		 	}
-	    	 public String getErrorLogin1() {
-	          	 return errorlogin1.getText();
-	        }
-	        public String getErrorLogin2() {
-	        return errorlogin2.getText();
+		    public boolean clickSubmitLogin1(){ 
+				return  login.isEnabled();
 	        }
 	        public void clickSignUpButton(){
 	        	signupredirect.click();

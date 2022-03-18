@@ -3,6 +3,7 @@ package com.techblog.utilities;
 import java.io.FileInputStream;
 import java.io.IOException;
 
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -20,7 +21,9 @@ public class ExcelUtility {
 	                 + "/Testdata.xlsx");
 	excelWBook = new XSSFWorkbook(ExcelFile);
 	        excelWSheet = excelWBook.getSheetAt(0);
-	        return excelWSheet.getRow(RowNum).getCell(ColNum).getStringCellValue();
+	        //return excelWSheet.getRow(RowNum).getCell(ColNum).getStringCellValue();
+	        DataFormatter formatter = new DataFormatter();
+	         return formatter.formatCellValue(excelWSheet.getRow(RowNum).getCell(ColNum));
 	    }
 	}
 
