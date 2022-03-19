@@ -73,11 +73,13 @@ LandingPage objLandingPage;
 		public void varifyingGitLink() throws IOException, InterruptedException {
 			driver.navigate().refresh();
 			objLandingPage.clickGithub();
+			
 			if (objLandingPage.clickGithub()) {
 					System.out.println("Github enabled but unable to click");
 			}else {
 					System.out.println("Github 'Null'");
 			}
+		
 			Thread.sleep(2000);
 				}
 			
@@ -97,50 +99,22 @@ LandingPage objLandingPage;
 			Assert.assertEquals(expectedURL3,actualURL3);
 			Thread.sleep(3000);
 			}
-		@Test(priority=6)
-		public void varifyingAboutUs() throws IOException, InterruptedException {
 		
-			objLandingPage.clickAboutUs();
-			String expectedURL2 =AutomationConstants.URL1;
-			String actualURL2 =driver.getCurrentUrl();
-			System.out.println(actualURL2);
-			Assert.assertEquals(expectedURL2,actualURL2);
-			Thread.sleep(3000);
-			
-			objLandingPage.clickTerms();
-			if (objLandingPage.clickTerms()) {
-					System.out.println("Terms Enabled, but unable to click");
-			}else {
-					System.out.println("Terms 'Null'");
-			}
-			Thread.sleep(2000);
-			}
-		@Test(priority=7)
-		public void varifyingSocialMedia() throws IOException, InterruptedException {
-	
-			driver.navigate().refresh();
-			objLandingPage.clickHandle();
-			if (objLandingPage.clickHandle()) {
-					System.out.println("Social media handles are unable to click");
-			}else {
-					System.out.println("social media handles 'Null'");
-			}
-			Thread.sleep(2000);
-				}
-		@Test(priority=8)
+		@Test(priority=6)
 		public void varifyingCategories() throws IOException, InterruptedException {
 			
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			objLandingPage.clickDrpCatagories();
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			objLandingPage.clickSpace(); 
-			Thread.sleep(2000);
+			
 			
 			String expectedURL4 =AutomationConstants.URL6;
 			String actualURL4 =driver.getCurrentUrl();
 			System.out.println(actualURL4);
 			Assert.assertEquals(expectedURL4,actualURL4);
 			
+			Thread.sleep(2000);
 			WebElement space= driver.findElement(By.xpath("/html/body/app-root/app-group/div[2]/li[15]/div/div/div/small"));
 			JavascriptExecutor jse = (JavascriptExecutor)driver;
 			jse.executeScript("arguments[0].click()", space); 
@@ -151,8 +125,29 @@ LandingPage objLandingPage;
 			Assert.assertEquals(expectedURL5,actualURL5);
 			Thread.sleep(2000);
 			driver.navigate().back();
+			}
+		@Test(priority=7)
+		public void varifyingAboutUs() throws IOException, InterruptedException {
 		
-	}
+			objLandingPage.clickAboutUs();
+			String expectedURL2 =AutomationConstants.URL1;
+			String actualURL2 =driver.getCurrentUrl();
+			System.out.println(actualURL2);
+			Assert.assertEquals(expectedURL2,actualURL2);
+			Thread.sleep(3000);
+			
+			objLandingPage.clickFb();
+			Thread.sleep(2000);
+			}
+		@Test(priority=8)
+		public void varifyingSocialMedia() throws IOException, InterruptedException {
+	
+			driver.navigate().refresh();
+			objLandingPage.clickTerms();
+			
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			driver.quit();
+			}
 }
 
 

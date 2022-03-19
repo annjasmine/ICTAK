@@ -4,15 +4,16 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.techblog.scripts.TCLogin">
+      <class name="com.techblog.scripts.TestClass">
         <methods>
-          <include name="verifySignUpLink"/>
-          <include name="verifyInvalidEmailLogin"/>
+          <include name="varifyingAboutUs"/>
+          <include name="varifyingSocialMedia"/>
+          <include name="varifyingFeedback"/>
           <include name="onSetup"/>
           <include name="quitBrowser"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.techblog.scripts.TCLogin -->
+      </class> <!-- com.techblog.scripts.TestClass -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

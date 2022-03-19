@@ -5,10 +5,10 @@
    <parameter name="browser" value="chrome"/> 
     <classes>
       <class name="com.techblog.scripts.TestBase"/>
-       <class name="com.techblog.scripts.TestClass"/>
           <class name="com.techblog.scripts.UserSignup"/>
            <class name="com.techblog.scripts.TrainerSignUp"/>
                <class name="com.techblog.scripts.TCLogin"/>
+               <class name="com.techblog.scripts.TestClass"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

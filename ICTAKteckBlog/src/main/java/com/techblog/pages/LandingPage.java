@@ -102,16 +102,13 @@ public class LandingPage {
 			 }
 			//Navigate About us page
 		     public void clickAboutUs(){
-			            aboutus.click();
-		    }      
-		     public boolean clickHandle(){
-		            return fb.isEnabled();
-		            //return linkin.isEnabled();
-		            //return twit.isEnabled();
-		            //return insta.isEnabled();
+			        aboutus.click();
 		     }
-		     public boolean clickTerms() {
-		    	 return terms.isEnabled();
+			 public void clickFb(){
+				    fb.click();
+		    }      
+			 public void clickTerms(){
+				    terms.click();
 		    }
 		   //Explore Latest Articles section
 		     public void clickHomePage(){  
