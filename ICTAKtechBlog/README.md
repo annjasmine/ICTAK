@@ -1,2 +1,2 @@
-# ICTAKteckBlog
+# ICTAKtechBlog
   ICTAK Tech Blog Tester
