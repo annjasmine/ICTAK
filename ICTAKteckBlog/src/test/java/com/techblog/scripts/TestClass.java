@@ -28,7 +28,7 @@ LandingPage objLandingPage;
 			Assert.assertEquals(expectedTitle,actualTitle);
 			}
 		@Test(priority=2)
-		public void varifyingFeedback() throws IOException, InterruptedException {
+		public void verifyingFeedback() throws IOException, InterruptedException {
 		
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 			js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
@@ -47,7 +47,7 @@ LandingPage objLandingPage;
 			Thread.sleep(2000);
 			}
 		@Test(priority=3)
-		public void varifyingContactUs() throws IOException, InterruptedException {
+		public void verifyingContactUs() throws IOException, InterruptedException {
 		
 			objLandingPage.clickContactUs();
 			String expectedURL =AutomationConstants.URL2;
@@ -70,7 +70,7 @@ LandingPage objLandingPage;
 			Thread.sleep(2000);
 			}
 		@Test(priority=4)
-		public void varifyingGitLink() throws IOException, InterruptedException {
+		public void verifyingGitLink() throws IOException, InterruptedException {
 			driver.navigate().refresh();
 			objLandingPage.clickGithub();
 			
@@ -84,7 +84,7 @@ LandingPage objLandingPage;
 				}
 			
 		@Test(priority=5)
-		public void varifyingLatestArticles() throws IOException, InterruptedException {
+		public void verifyingLatestArticles() throws IOException, InterruptedException {
 		
 			objLandingPage.clickHomePage();
 			WebElement  jupiter=driver.findElement(By.xpath("//*[text()='Metal clouds and liquid gems spotted in the atmosphere of hot Jupiter WASP-121 b']")); 
@@ -101,7 +101,7 @@ LandingPage objLandingPage;
 			}
 		
 		@Test(priority=6)
-		public void varifyingCategories() throws IOException, InterruptedException {
+		public void verifyingCategories() throws IOException, InterruptedException {
 			
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			objLandingPage.clickDrpCatagories();
@@ -127,7 +127,7 @@ LandingPage objLandingPage;
 			driver.navigate().back();
 			}
 		@Test(priority=7)
-		public void varifyingAboutUs() throws IOException, InterruptedException {
+		public void verifyingAboutUs() throws IOException, InterruptedException {
 		
 			objLandingPage.clickAboutUs();
 			String expectedURL2 =AutomationConstants.URL1;
@@ -140,7 +140,7 @@ LandingPage objLandingPage;
 			Thread.sleep(2000);
 			}
 		@Test(priority=8)
-		public void varifyingSocialMedia() throws IOException, InterruptedException {
+		public void verifyingSocialMedia() throws IOException, InterruptedException {
 	
 			driver.navigate().refresh();
 			objLandingPage.clickTerms();
