@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.techblog.scripts.TCNewPost">
+        <methods>
+          <include name="verifyAddingPostInElect"/>
+          <include name="verifyAddingPostInRobot"/>
+          <include name="verifyPostContentofNewPostwithEmptyStrings"/>
+          <include name="onSetup"/>
+          <include name="verifyTitleofNewPostwithEmptyStrings"/>
+          <include name="tearDown"/>
+          <include name="verifyNewPostNullTest"/>
+          <include name="quit"/>
+          <include name="verifyImageUrlofNewPostwithEmptyStrings"/>
+        </methods>
+      </class> <!-- com.techblog.scripts.TCNewPost -->
+      <class name="com.techblog.scripts.TCEditPost">
+        <methods>
+          <include name="onSetup"/>
+          <include name="verifyEditPost"/>
+          <include name="tearDown"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.techblog.scripts.TCEditPost -->
+      <class name="com.techblog.scripts.TCAdminMsg">
+        <methods>
+          <include name="verifyGetAdminMsgs"/>
+          <include name="onSetup"/>
+          <include name="verifyAdminMsgsHeader"/>
+          <include name="tearDown"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.techblog.scripts.TCAdminMsg -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
