@@ -1,0 +1,6 @@
+com/techblog/constants/AutomationConstants.class
+com/techblog/pages/Login.class
+com/techblog/pages/Newpost.class
+com/techblog/pages/Myposts.class
+com/techblog/utilities/ExcelUtility.class
+com/techblog/utilities/PageUtility.class
