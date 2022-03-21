@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <parameter name="browser" value="chrome"/>
  <class name="com.techblog.scripts.TCAdminLoginClassF"/>
  <class name="com.techblog.scripts.TCAdminAdReCate"/>
@@ -15,4 +16,23 @@
  <class name="com.techblog.scripts.TCAdminAdReCate"/>
   <class name="com.techblog.scripts.TCAdminHomeF"/>
  <class name="com.techblog.scripts.TCAdminNewPostF"/> 
+=======
+<parameter name="browser" value="chrome"/>
+ <class name="com.techblog.scripts.TCAdminLoginClassF"/>
+ <class name="com.techblog.scripts.TCAdminAdReCate"/>
+   <class name="com.techblog.scripts.TCAdminNewPostF"/>
+ <class name="com.techblog.scripts.TCAdminHomeF"/>
+ 
+  DataFormatter formatter = new DataFormatter();
+    return formatter.formatCellValue(excelWSheet.getRow(RowNum).getCell(ColNum));
+    
+    
+    
+    2.
+    <class name="com.techblog.scripts.TCAllPosts"/>
+  <class name="com.techblog.scripts.TCPendingApp"/>
+ <class name="com.techblog.scripts.TCAdminAdReCate"/>
+  <class name="com.techblog.scripts.TCAdminHomeF"/>
+ <class name="com.techblog.scripts.TCAdminNewPostF"/> 
+>>>>>>> ec2d49963ebd06203cfa3a68ad0b980969050210
     

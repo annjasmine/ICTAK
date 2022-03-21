@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
@@ -14,3 +15,21 @@
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+ <class name="com.techblog.scripts.TestBase"/> 
+
+      <class name="com.techblog.scripts.TCAdminLoginClassF"/>
+    
+  <class name="com.techblog.scripts.TCAdminHomeF"/>
+    
+         
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+>>>>>>> ec2d49963ebd06203cfa3a68ad0b980969050210
